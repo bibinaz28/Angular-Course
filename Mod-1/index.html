@@ -1,31 +1,30 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <title>Lunch Checker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="angular.min.js"></script>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="styles/bootstrap.min.css">
-    <style>
-      .message { font-size: 1.3em; font-weight: bold; }
-    </style>
-  </head>
-<body ng-app="LunchCheck">
-   <div class="container">
-     <h1>Lunch Checker</h1>
 
-         <div class="form-group" ng-controller="LunchCheckController">
-             <input id="lunch-menu" type="text" ng-model="lunchMenu"
-             placeholder="list comma separated dishes you usually have for lunch"
-             class="form-control">
-         </div>
-         <div class="form-group">
-             <button class="btn btn-default" ng-model="foodCheck">Check If Too Much</button>
-         </div>
-         <div class="form-group message">
-           <!-- Your message can go here. -->
-         </div>
-   </div>
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
 
+	<script src="angular.min.js"> </script>
+	<script src="app.js"> </script>
+
+<title>Lunch Checker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+	<style>
+
+  	.message{font-size: 1.3em;font-weight:bold;}
+ 	 </style>
+
+</head>
+<body><h1>Lunch Check</h1>
+  <div ng-controller='myFirstController'>
+    <div>
+    Item Names:  <input type="text" ng-model="itemname" placeholder="list comma separated dishes for lunch">
+  </div>
+  <div>  <button ng-click="calculateitem()">Check If Too Much</button>
+    <br>
+{{result}}
+
+  </div>
+  </div>
 </body>
 </html>
