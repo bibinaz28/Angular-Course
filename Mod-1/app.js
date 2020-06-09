@@ -12,7 +12,7 @@
       res=checkLunch($scope.itemname);
       if($scope.itemname==" ")
       {
-        $scope.result= "Please Enter Data First";
+        $scope.result= "Please Enter Data";
       }
       else if(res>0 && res<=3)
       {
