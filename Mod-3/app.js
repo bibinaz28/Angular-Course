@@ -7,6 +7,7 @@
   .directive('foundItems', FoundItemsDirective);
 
 
+
 function FoundItemsDirective () {
   var ddo = {
     templateUrl : "menuResult.html",
@@ -18,6 +19,7 @@ function FoundItemsDirective () {
   };
   return ddo;
 }
+
 
 
 
@@ -52,12 +54,14 @@ function NarrowItDownController (MenuSearchService) {
       narrowItDownCtrl.found = [];
     }
   }
+  
 
   narrowItDownCtrl.remove = function (index) {
     narrowItDownCtrl.found.splice(index,1);
   }
 
 }
+
 
 MenuSearchService.$inject=['$http'];
 function MenuSearchService ($http) {
