@@ -1,0 +1,40 @@
+body {
+  font-size: 1.2em;
+}
+
+h1.hd1{
+ color: maroon;
+ font-family: fantasy;
+
+
+}
+div.tabs > a, div.tabs > button {
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+div.tabs {
+  margin-bottom: 10px;
+}
+
+.activeTab {
+  font-weight: bold;
+}
+
+.short-name {
+  width: "150px";
+  text-align: "center";
+}
+
+.heavy {
+  font-weight: 600;
+}
+
+td > a[ui-sref]:hover {
+  display: inline-block;
+  cursor: pointer;
+  border: solid black 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+

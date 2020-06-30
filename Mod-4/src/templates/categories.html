@@ -1,0 +1,25 @@
+<a ui-sref="home" ui-sref-active="activeTab">Back</a>
+
+<table>
+  <tr valign="top">
+      <td>
+        <h3 style="color: blue">
+          Menu categories
+        </h3>
+      </td>
+      <td>
+        <h3 style="color: blue">
+          Menu items
+        </h3>
+      </td>
+  </tr>
+  
+  <tr valign="top">
+      <td>
+        <categories categories="catxCtrl.categories"></categories>
+      </td>
+      <td>
+        <ui-view></ui-view>
+      </td>
+  </tr>
+</table>

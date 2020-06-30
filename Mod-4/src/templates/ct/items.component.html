@@ -1,0 +1,22 @@
+<table border="1" width="850px" valign="top">
+  <tr>
+    <th align="left" colspan="1" style="padding-left: 15px;">Item</th>
+    <th>Price Sm</th>
+    <th>Price Lg</th>
+  </tr>
+  <tr ng-repeat="item in $ctrl.items">
+    <td align="left" width="650px;" title="{{item.description}}" style="padding-left: 15px;">
+      <span class="heavy">
+        {{ item.name }}
+      </span>
+
+       [{{ item.short_name }}]
+    </td>
+    <td align="center" width="175px;">
+      {{ (item.price_small | currency) || "&mdash;" }} {{ item.small_portion_name }}
+    </td>
+    <td align="center" width="175px;">
+      {{ (item.price_large | currency) || "&mdash;" }} {{ item.large_portion_name }}
+    </td>
+  </tr>
+</table>
