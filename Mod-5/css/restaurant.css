@@ -86,6 +86,8 @@ body {
 }
 /* END HEADER */
 
+
+
 /* FOOTER */
 .panel-footer {
   margin-top: 30px;
@@ -117,6 +119,10 @@ body {
 a[ui-sref="admin.auth"] {
   color: #fff;
 }
+
+
+
+
 /* END FOOTER */
 
 /********** Medium devices only **********/
@@ -130,6 +136,9 @@ a[ui-sref="admin.auth"] {
   }
   /* End Header */
 }
+
+
+
 
 
 /********** Extra small devices only **********/
@@ -176,6 +185,9 @@ a[ui-sref="admin.auth"] {
   }
   /* End Header */
 
+
+
+
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
@@ -189,6 +201,8 @@ a[ui-sref="admin.auth"] {
   }
   /* End Footer */
 }
+
+
 
 
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/

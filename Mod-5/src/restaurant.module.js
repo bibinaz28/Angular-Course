@@ -2,7 +2,7 @@
 "use strict";
 
 /**
- * Restaurant module that includes the public module as a dependency
+ * Restaurant module 
  */
 angular.module('restaurant', ['public'])
 .config(config);
